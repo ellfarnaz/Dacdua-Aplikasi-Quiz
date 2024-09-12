@@ -40,13 +40,13 @@ export default function Home() {
   };
 
   const handleLogout = async () => {
-    Alert.alert("Logout", "Are you sure you want to logout?", [
+    Alert.alert("Keluar", "Apakah Kamu Yakin Ingin Keluar", [
       {
-        text: "Cancel",
+        text: "Tidak",
         style: "cancel",
       },
       {
-        text: "Logout",
+        text: "Keluar",
         onPress: async () => {
           try {
             await AsyncStorage.removeItem("userData");
@@ -67,7 +67,7 @@ export default function Home() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.profileSection}>
         <View style={styles.profileImageContainer}>
           <Ionicons
@@ -100,15 +100,16 @@ export default function Home() {
           size={24}
           color="white"
         />
-        <Text style={styles.logoutButtonText}>Logout</Text>
+        <Text style={styles.logoutButtonText}>Keluar</Text>
       </TouchableOpacity>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "white",
   },
   profileSection: {
     alignItems: "center",

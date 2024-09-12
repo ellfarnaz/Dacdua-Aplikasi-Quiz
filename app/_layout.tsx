@@ -55,7 +55,7 @@ export default function Layout() {
         <Stack>
           <Stack.Screen
             name="index"
-            options={{ headerShown: false }}
+            options={{ headerShown: false, title: "Home" }}
           />
           <Stack.Screen
             name="register"

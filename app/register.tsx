@@ -22,7 +22,7 @@ export default function Register() {
 
   const handleRegister = async () => {
     if (name.trim() === "" || institution.trim() === "") {
-      Alert.alert("Error", "Please fill in all fields");
+      Alert.alert("Error", "Tolong isikan semua kolom");
       return;
     }
 
@@ -36,7 +36,7 @@ export default function Register() {
       router.replace("/");
     } catch (error) {
       console.error("Error saving user data:", error);
-      Alert.alert("Error", "Failed to save user data. Please try again.");
+      Alert.alert("Error", "Tolong isikan semua kolom.");
     }
   };
 
@@ -48,14 +48,14 @@ export default function Register() {
         <Text style={styles.title}>Register</Text>
         <TextInput
           style={styles.input}
-          placeholder="Name"
+          placeholder="Nama"
           value={name}
           onChangeText={setName}
           placeholderTextColor="#999"
         />
         <TextInput
           style={styles.input}
-          placeholder="Institution"
+          placeholder="Institusi"
           value={institution}
           onChangeText={setInstitution}
           placeholderTextColor="#999"
