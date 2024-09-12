@@ -10,8 +10,8 @@ import * as SplashScreen from "expo-splash-screen";
 SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [appIsReady, setAppIsReady] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [appIsReady, setAppIsReady] = useState<boolean>(false);
 
   useEffect(() => {
     async function prepare() {
@@ -63,7 +63,11 @@ export default function Layout() {
           />
           <Stack.Screen
             name="quiz"
-            options={{ title: "Quiz" }}
+            options={({ route }: { route: any }) => ({
+              title: route.params?.quizName
+                ? `Quiz ${route.params.quizName}`
+                : "Quiz",
+            })}
           />
           <Stack.Screen
             name="Materi/naratif-text"
