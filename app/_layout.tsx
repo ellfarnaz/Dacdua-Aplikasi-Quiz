@@ -1,37 +1,77 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import React, { useEffect, useState, useCallback } from "react";
+import { Stack, Redirect } from "expo-router";
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { View } from "react-native";
+import * as SplashScreen from "expo-splash-screen";
 
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
+// Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+export default function Layout() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [appIsReady, setAppIsReady] = useState(false);
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
+    async function prepare() {
+      try {
+        await checkUserData();
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        setAppIsReady(true);
+      }
     }
-  }, [loaded]);
 
-  if (!loaded) {
+    prepare();
+  }, []);
+
+  const checkUserData = async () => {
+    try {
+      const userData = await AsyncStorage.getItem("userData");
+      setIsLoggedIn(!!userData);
+    } catch (error) {
+      console.error("Error checking user data:", error);
+      setIsLoggedIn(false);
+    }
+  };
+
+  const onLayoutRootView = useCallback(async () => {
+    if (appIsReady) {
+      await SplashScreen.hideAsync();
+    }
+  }, [appIsReady]);
+
+  if (!appIsReady) {
     return null;
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-    </ThemeProvider>
+    <Provider store={store}>
+      <View
+        style={{ flex: 1 }}
+        onLayout={onLayoutRootView}>
+        <Stack>
+          <Stack.Screen
+            name="index"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="register"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="quiz"
+            options={{ title: "Quiz" }}
+          />
+          <Stack.Screen
+            name="Materi/naratif-text"
+            options={{ title: "Teks Naratif" }}
+          />
+        </Stack>
+        {isLoggedIn === false && <Redirect href="/register" />}
+      </View>
+    </Provider>
   );
 }
