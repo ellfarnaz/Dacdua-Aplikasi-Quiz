@@ -21,216 +21,123 @@ export const materials: Material[] = [
     name: "Teks Naratif",
     quizzes: [
       {
-        name: "Definisi Teks Naratif",
+        name: "Level 1 Kuis Formatif",
         questions: [
           {
-            question: "Apa yang dimaksud dengan teks naratif?",
+            question: "Apa definisi teks naratif?",
             answers: {
-              A: "Teks yang menjelaskan cara melakukan sesuatu secara rinci.",
-              B: "Teks yang menceritakan suatu peristiwa atau rangkaian peristiwa dalam urutan waktu tertentu.",
-              C: "Teks yang berisi data dan angka untuk analisis.",
-              D: "Teks yang berfungsi untuk membandingkan dua objek atau ide.",
+              A: "Teks yang menjelaskan langkah-langkah melakukan sesuatu",
+              B: "Teks yang menceritakan peristiwa dalam urutan waktu tertentu",
+              C: "Teks yang menggambarkan suatu tempat secara detail",
+              D: "Teks yang memberikan argumen tentang suatu topik",
             },
             correctAnswer: "B",
           },
           {
-            question: "Apa tujuan utama dari teks naratif?",
+            question: "Salah satu tujuan utama teks naratif adalah untuk...",
             answers: {
-              A: "Menyajikan fakta ilmiah dan data statistik.",
-              B: "Menghibur pembaca dan menyampaikan pesan moral atau nilai-nilai tertentu.",
-              C: "Menyediakan panduan langkah demi langkah untuk melakukan tugas tertentu.",
-              D: "Menganalisis dan membandingkan teori-teori ilmiah.",
-            },
-            correctAnswer: "B",
-          },
-          {
-            question:
-              "Jenis teks apa yang bisa termasuk dalam kategori teks naratif?",
-            answers: {
-              A: "Manual pengguna",
-              B: "Cerita pendek",
-              C: "Artikel ilmiah",
-              D: "Laporan keuangan",
-            },
-            correctAnswer: "B",
-          },
-          {
-            question: "Teks naratif dapat berupa cerita yang bersifat:",
-            answers: {
-              A: "Hanya nyata",
-              B: "Hanya fiktif",
-              C: "Baik nyata maupun fiktif",
-              D: "Hanya teknis dan informatif",
+              A: "Menjelaskan prosedur",
+              B: "Memberikan laporan",
+              C: "Menghibur pembaca",
+              D: "Mengkritik suatu fenomena",
             },
             correctAnswer: "C",
           },
           {
-            question:
-              "Salah satu elemen penting yang sering ditemukan dalam teks naratif adalah:",
+            question: "Apa fungsi estetika dari teks naratif?",
             answers: {
-              A: "Diagram dan tabel",
-              B: "Urutan peristiwa dalam waktu tertentu",
-              C: "Langkah-langkah prosedural",
-              D: "Analisis data statistik",
-            },
-            correctAnswer: "B",
-          },
-        ],
-      },
-      {
-        name: "Tujuan Teks Naratif",
-        questions: [
-          {
-            question:
-              "Apa tujuan utama dari menyajikan cerita dalam teks naratif?",
-            answers: {
-              A: "Mengajarkan keterampilan matematika",
-              B: "Menghibur pembaca atau pendengar",
+              A: "Menyampaikan informasi terbaru",
+              B: "Menggunakan bahasa yang deskriptif dan imajinatif",
               C: "Menyajikan data statistik",
-              D: "Mengukur tingkat kebugaran",
+              D: "Memberikan instruksi langkah demi langkah",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Teks naratif dapat digunakan untuk menyampaikan...",
+            answers: {
+              A: "Nilai-nilai sosial dan budaya",
+              B: "Instruksi teknis",
+              C: "Grafik dan tabel",
+              D: "Perbandingan produk",
+            },
+            correctAnswer: "A",
+          },
+          {
+            question: "Salah satu fungsi edukatif dari teks naratif adalah...",
+            answers: {
+              A: "Memberikan argumen logis",
+              B: "Mengajarkan nilai-nilai penting dalam kehidupan",
+              C: "Menyajikan fakta ilmiah",
+              D: "Menyusun laporan keuangan",
             },
             correctAnswer: "B",
           },
           {
             question:
-              "Selain menghibur, apa tujuan lain dari teks naratif yang sering ditemukan?",
+              "Apa yang dimaksud dengan fungsi psikologis dalam teks naratif?",
             answers: {
-              A: "Mengukur hasil eksperimen",
-              B: "Menyampaikan pesan moral atau nilai",
-              C: "Menghitung pengeluaran",
-              D: "Merencanakan jadwal kegiatan",
+              A: "Menyediakan data psikologis",
+              B: "Memfasilitasi pemahaman emosi dan perasaan manusia",
+              C: "Mengkritik teori psikologi",
+              D: "Menyajikan eksperimen psikologi",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Teks naratif sering kali digunakan untuk...",
+            answers: {
+              A: "Menyampaikan laporan cuaca",
+              B: "Menyajikan cerita rakyat dan legenda",
+              C: "Menjelaskan proses kimia",
+              D: "Menghitung persamaan matematika",
             },
             correctAnswer: "B",
           },
           {
             question:
-              "Bagaimana teks naratif dapat digunakan untuk memberikan informasi?",
+              "Apa tujuan dari menyampaikan pesan moral dalam teks naratif?",
             answers: {
-              A: "Dengan menyajikan laporan keuangan",
-              B: "Dengan mengajarkan tentang sejarah, budaya, atau peristiwa penting",
-              C: "Dengan menghitung anggaran",
-              D: "Dengan merancang strategi pemasaran",
-            },
-            correctAnswer: "B",
-          },
-          {
-            question:
-              'Apa yang dimaksud dengan "menghibur" dalam konteks teks naratif?',
-            answers: {
-              A: "Menyajikan data ilmiah",
-              B: "Memberikan instruksi teknis",
-              C: "Menghitung laba rugi",
-              D: "Membuat cerita yang menarik dan menggugah perasaan",
-            },
-            correctAnswer: "D",
-          },
-          {
-            question:
-              "Mengapa penulis teks naratif sering menyampaikan pesan moral?",
-            answers: {
-              A: "Untuk memberikan nilai tambah pada laporan",
-              B: "Untuk memotivasi pembaca dengan pelajaran hidup",
-              C: "Untuk mencatat inventaris barang",
-              D: "Untuk merancang sistem informasi",
-            },
-            correctAnswer: "B",
-          },
-        ],
-      },
-
-      {
-        name: "Fungsi Teks Naratif",
-        questions: [
-          {
-            question:
-              "Apa fungsi utama dari penggunaan bahasa deskriptif dan imajinatif dalam teks naratif?",
-            answers: {
-              A: "Untuk memberikan informasi secara akurat",
-              B: "Untuk menghibur pembaca dengan cerita yang menyenangkan",
-              C: "Untuk meningkatkan keindahan dan keterlibatan pembaca dalam pengalaman cerita",
-              D: "Untuk mengajarkan keterampilan bahasa yang baru",
-            },
-            correctAnswer: "C",
-          },
-          {
-            question:
-              "Bagaimana teks naratif dapat mencerminkan budaya suatu masyarakat?",
-            answers: {
-              A: "Dengan menyajikan data statistik tentang masyarakat",
-              B: "Dengan menyampaikan nilai-nilai sosial, tradisi, dan norma budaya melalui cerita",
-              C: "Dengan menjelaskan sejarah politik masyarakat",
-              D: "Dengan memberikan panduan praktis tentang kehidupan sehari-hari",
-            },
-            correctAnswer: "B",
-          },
-          {
-            question:
-              "Apa yang dimaksud dengan fungsi edukatif dalam teks naratif?",
-            answers: {
-              A: "Menghibur pembaca dengan cerita yang penuh fantasi",
-              B: "Memberikan pelajaran moral dan pengetahuan kepada pembaca",
-              C: "Menggunakan bahasa yang kompleks dan sulit dimengerti",
-              D: "Menggambarkan proses sosial dan budaya secara mendetail",
-            },
-            correctAnswer: "B",
-          },
-          {
-            question:
-              "Fungsi psikologis dari teks naratif membantu pembaca dalam hal apa?",
-            answers: {
-              A: "Memahami fakta-fakta ilmiah",
-              B: "Mengembangkan keterampilan menulis",
-              C: "Memahami emosi dan perasaan manusia serta mengembangkan empati",
-              D: "Menghafal informasi sejarah",
-            },
-            correctAnswer: "C",
-          },
-          {
-            question:
-              "Mengapa cerita rakyat, mitos, legenda, dan fabel sering dimasukkan dalam teks naratif?",
-            answers: {
-              A: "Karena mereka merupakan bagian dari pelajaran matematika",
-              B: "Karena mereka mencerminkan aspek sosial dan budaya dari suatu masyarakat",
-              C: "Karena mereka berisi informasi ilmiah yang akurat",
-              D: "Karena mereka menawarkan panduan praktis tentang kebijakan pemerintah",
+              A: "Untuk menghibur semata",
+              B: "Untuk memberikan pelajaran kepada pembaca",
+              C: "Untuk mengkritik kebijakan pemerintah",
+              D: "Untuk menyajikan data statistik",
             },
             correctAnswer: "B",
           },
         ],
       },
-
       {
-        name: "Jenis-jenis Teks Naratif",
+        name: "Level 2 Kuis Formatif",
         questions: [
           {
             question: "Apa tujuan utama dari teks naratif ekspositoris?",
             answers: {
               A: "Menghibur pembaca",
-              B: "Memberikan informasi atau menjelaskan sesuatu",
-              C: "Menggugah emosi pembaca",
-              D: "Menyampaikan pesan moral",
+              B: "Memberikan informasi atau penjelasan",
+              C: "Menyampaikan pesan moral",
+              D: "Menggugah emosi pembaca",
             },
             correctAnswer: "B",
           },
           {
-            question:
-              "Teks naratif jenis apa yang sering digunakan dalam konteks akademik atau profesional?",
+            question: "Contoh dari teks naratif ekspositoris adalah...",
             answers: {
-              A: "Teks naratif sugestif",
-              B: "Teks naratif ekspositoris",
-              C: "Teks naratif fiksi",
-              D: "Teks naratif fabel",
+              A: "Cerita pendek",
+              B: "Novel",
+              C: "Biografi",
+              D: "Fabel",
             },
-            correctAnswer: "B",
+            correctAnswer: "C",
           },
           {
             question:
-              "Manakah dari berikut ini yang merupakan contoh teks naratif sugestif?",
+              "Teks naratif sugestif sering menggunakan elemen berikut, kecuali...",
             answers: {
-              A: "Biografi",
-              B: "Laporan perjalanan",
-              C: "Novel",
-              D: "Artikel sejarah",
+              A: "Metafora",
+              B: "Simbolisme",
+              C: "Data statistik",
+              D: "Fiksi",
             },
             correctAnswer: "C",
           },
@@ -238,23 +145,334 @@ export const materials: Material[] = [
             question:
               "Apa yang menjadi fokus utama dalam teks naratif sugestif?",
             answers: {
-              A: "Struktur yang jelas dan logis",
-              B: "Penyampaian informasi yang akurat dan obyektif",
-              C: "Cara penyampaian cerita dan dampaknya terhadap pembaca",
-              D: "Penyampaian informasi dalam konteks akademik",
+              A: "Penyampaian informasi obyektif",
+              B: "Struktur logis",
+              C: "Cara penyampaian cerita dan dampaknya",
+              D: "Data ilmiah",
             },
             correctAnswer: "C",
           },
           {
             question:
-              "Teks naratif mana yang sering menggunakan elemen fiksi, metafora, dan simbolisme untuk menyampaikan makna yang lebih dalam?",
+              "Perbedaan utama antara teks naratif ekspositoris dan sugestif adalah pada...",
             answers: {
-              A: "Laporan perjalanan",
-              B: "Artikel sejarah",
-              C: "Fabel",
-              D: "Biografi",
+              A: "Jumlah kata",
+              B: "Tujuan dan dampak pada pembaca",
+              C: "Penggunaan bahasa formal",
+              D: "Jenis font yang digunakan",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Ciri-ciri teks naratif meliputi hal-hal berikut, kecuali...",
+            answers: {
+              A: "Alur cerita yang jelas",
+              B: "Karakter yang berkembang",
+              C: "Penyajian data statistik",
+              D: "Bahasa deskriptif dan imajinatif",
             },
             correctAnswer: "C",
+          },
+          {
+            question:
+              "Apa yang dimaksud dengan teks naratif yang ditulis dalam urutan kronologis?",
+            answers: {
+              A: "Ditulis berdasarkan urutan abjad",
+              B: "Ditulis sesuai urutan waktu kejadian",
+              C: "Ditulis dengan menggunakan angka",
+              D: "Ditulis tanpa urutan yang jelas",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Teks naratif yang menggunakan teknik kilas balik berarti...",
+            answers: {
+              A: "Cerita dimulai dari akhir dan kembali ke awal",
+              B: "Cerita disajikan dengan urutan waktu maju",
+              C: "Cerita disajikan dalam bentuk puisi",
+              D: "Cerita menggunakan banyak dialog",
+            },
+            correctAnswer: "A",
+          },
+        ],
+      },
+
+      {
+        name: "Level 3 Kuis Formatif",
+        questions: [
+          {
+            question:
+              "Struktur Teks Naratif mana yang memperkenalkan tokoh, latar, dan situasi awal?",
+            answers: {
+              A: "Complication",
+              B: "Orientation",
+              C: "Resolution",
+              D: "Moral Values",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Struktur Teks Naratif mana yang menunjukkan konflik atau masalah yang muncul dalam cerita?",
+            answers: {
+              A: "Orientation",
+              B: "Complication",
+              C: "Resolution",
+              D: "Moral Values",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Struktur Teks Naratif mana yang menggambarkan cara penyelesaian konflik atau masalah dalam cerita?",
+            answers: {
+              A: "Orientation",
+              B: "Complication",
+              C: "Resolution",
+              D: "Moral Values",
+            },
+            correctAnswer: "C",
+          },
+          {
+            question:
+              "Apakah struktur teks naratif 'Moral Values' selalu ada dalam setiap cerita?",
+            answers: {
+              A: "Ya, selalu ada",
+              B: "Tidak, tidak selalu ada",
+              C: "Tidak, hanya ada dalam cerita yang memiliki moral",
+              D: "Tidak, hanya ada dalam cerita yang tidak memiliki moral",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Struktur teks naratif mana yang menggambarkan kesimpulan atau pesan moral yang ingin disampaikan?",
+            answers: {
+              A: "Orientation",
+              B: "Complication",
+              C: "Resolution",
+              D: "Moral Values",
+            },
+            correctAnswer: "D",
+          },
+        ],
+      },
+
+      {
+        name: "Summative Quiz",
+        questions: [
+          {
+            question: "Apa definisi dari teks naratif?",
+            answers: {
+              A: "Teks yang menjelaskan cara melakukan sesuatu",
+              B: "Teks yang menceritakan peristiwa dalam urutan waktu tertentu",
+              C: "Teks yang memberikan informasi faktual",
+              D: "Teks yang mendeskripsikan suatu objek",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Apa tujuan utama dari teks naratif?",
+            answers: {
+              A: "Menghibur dan menyampaikan pesan moral",
+              B: "Menyampaikan informasi ilmiah",
+              C: "Mendiskusikan isu-isu sosial",
+              D: "Mempromosikan produk",
+            },
+            correctAnswer: "A",
+          },
+          {
+            question:
+              "Jenis teks naratif yang bertujuan memberikan informasi disebut...",
+            answers: {
+              A: "Sugestif",
+              B: "Ekspositoris",
+              C: "Deskriptif",
+              D: "Argumentatif",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Teks naratif sugestif biasanya menggunakan elemen berikut, kecuali...",
+            answers: {
+              A: "Metafora",
+              B: "Simbolisme",
+              C: "Data statistik",
+              D: "Fiksi",
+            },
+            correctAnswer: "C",
+          },
+          {
+            question: "Fungsi estetika dalam teks naratif adalah...",
+            answers: {
+              A: "Menyampaikan informasi secara akurat",
+              B: "Menggunakan bahasa yang deskriptif dan imajinatif",
+              C: "Menyajikan data dan fakta",
+              D: "Mengajarkan cara melakukan sesuatu",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Apa yang dimaksud dengan fungsi sosial dan budaya dari teks naratif?",
+            answers: {
+              A: "Menyampaikan nilai-nilai sosial dan norma budaya",
+              B: "Mengajarkan keterampilan teknis",
+              C: "Menyajikan data ekonomi",
+              D: "Menjelaskan fenomena alam",
+            },
+            correctAnswer: "A",
+          },
+          {
+            question:
+              "Teks naratif dapat mengajarkan pembaca tentang nilai-nilai penting dalam kehidupan. Ini merupakan fungsi...",
+            answers: {
+              A: "Estetika",
+              B: "Edukatif",
+              C: "Psikologis",
+              D: "Ekonomi",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Apa perbedaan utama antara teks naratif ekspositoris dan sugestif?",
+            answers: {
+              A: "Ekspositoris fokus pada hiburan, sugestif fokus pada informasi",
+              B: "Ekspositoris fokus pada informasi, sugestif fokus pada hiburan",
+              C: "Ekspositoris menggunakan metafora, sugestif menggunakan data",
+              D: "Ekspositoris menggunakan simbolisme, sugestif menggunakan fakta",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Ciri-ciri teks naratif antara lain, kecuali...",
+            answers: {
+              A: "Mengandung alur cerita yang jelas",
+              B: "Memiliki karakter yang berkembang",
+              C: "Menggunakan bahasa formal dan teknis",
+              D: "Mengandung konflik dan resolusi",
+            },
+            correctAnswer: "C",
+          },
+          {
+            question:
+              "Apa yang dimaksud dengan 'Orientation' dalam struktur teks naratif?",
+            answers: {
+              A: "Menunjukkan konflik dalam cerita",
+              B: "Memperkenalkan tokoh, latar, dan situasi awal",
+              C: "Menggambarkan penyelesaian konflik",
+              D: "Menyampaikan pesan moral",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Apa yang dimaksud dengan 'Complication' dalam struktur teks naratif?",
+            answers: {
+              A: "Memperkenalkan tokoh dan latar",
+              B: "Menunjukkan konflik atau masalah dalam cerita",
+              C: "Menggambarkan penyelesaian konflik",
+              D: "Menyampaikan pesan moral",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Apa yang dimaksud dengan 'Resolution' dalam struktur teks naratif?",
+            answers: {
+              A: "Memperkenalkan tokoh dan latar",
+              B: "Menunjukkan konflik atau masalah dalam cerita",
+              C: "Menggambarkan cara penyelesaian konflik",
+              D: "Menyampaikan pesan moral",
+            },
+            correctAnswer: "C",
+          },
+          {
+            question:
+              "Jenis teks naratif yang sering digunakan dalam konteks akademik adalah...",
+            answers: {
+              A: "Sugestif",
+              B: "Ekspositoris",
+              C: "Deskriptif",
+              D: "Argumentatif",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Contoh teks naratif sugestif adalah...",
+            answers: {
+              A: "Biografi",
+              B: "Laporan perjalanan",
+              C: "Cerita pendek",
+              D: "Artikel sejarah",
+            },
+            correctAnswer: "C",
+          },
+          {
+            question: "Fungsi psikologis dari teks naratif adalah...",
+            answers: {
+              A: "Menyampaikan informasi teknis",
+              B: "Memfasilitasi pemahaman emosi dan perasaan manusia",
+              C: "Menyajikan data dan fakta",
+              D: "Mengajarkan keterampilan praktis",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Teks naratif yang mengandung pesan moral dapat mengajarkan pembaca tentang...",
+            answers: {
+              A: "Nilai-nilai ekonomi",
+              B: "Nilai-nilai penting dalam kehidupan",
+              C: "Teknik ilmiah",
+              D: "Prosedur operasi",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Teks naratif sering kali ditulis dalam urutan...",
+            answers: {
+              A: "Acak",
+              B: "Kronologis",
+              C: "Alfabetis",
+              D: "Numerik",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question:
+              "Apa yang dimaksud dengan 'Moral Values' dalam struktur teks naratif?",
+            answers: {
+              A: "Memperkenalkan tokoh dan latar",
+              B: "Menunjukkan konflik atau masalah dalam cerita",
+              C: "Menggambarkan cara penyelesaian konflik",
+              D: "Kesimpulan atau pesan moral yang ingin disampaikan",
+            },
+            correctAnswer: "D",
+          },
+          {
+            question: "Teks naratif ekspositoris lebih menekankan pada...",
+            answers: {
+              A: "Hiburan dan emosi",
+              B: "Penyampaian informasi yang akurat dan obyektif",
+              C: "Penggunaan bahasa yang imajinatif",
+              D: "Penggunaan metafora dan simbolisme",
+            },
+            correctAnswer: "B",
+          },
+          {
+            question: "Dalam teks naratif, konflik berfungsi sebagai...",
+            answers: {
+              A: "Pengantar cerita",
+              B: "Inti cerita",
+              C: "Kesimpulan cerita",
+              D: "Latar belakang cerita",
+            },
+            correctAnswer: "B",
           },
         ],
       },
